@@ -6,7 +6,7 @@ const {
   Switch
 } = window.ReactRouterDOM;
 
-// 匯入元件
+// 匯入元件（全部都使用相對路徑）
 import Sidebar from "./layout/Sidebar.js";
 import Page from "./components/Page.js";
 
