@@ -4,27 +4,14 @@
     <meta charset="UTF-8" />
     <title>麵包店商家管理系統</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- base href 確保相對路徑正確 -->
+    <link rel="icon" href="./favicon.ico" />
     <base href="./" />
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- 先載入 React 與 ReactDOM -->
-    <script type="module">
-      import React from "https://esm.sh/react@17";
-      import ReactDOM from "https://esm.sh/react-dom@17";
-      import * as ReactRouterDOM from "https://cdn.skypack.dev/react-router-dom@5";
-
-      // 掛到全域
-      window.React = React;
-      window.ReactDOM = ReactDOM;
-      window.ReactRouterDOM = ReactRouterDOM;
-
-      // 等待上面都成功後再動態載入 app.js
-      import("./app.js");
-    </script>
+    <!-- 直接用 src 屬性載入主程式模組，避免 dynamic import 問題 -->
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
