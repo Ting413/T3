@@ -4,23 +4,27 @@
     <meta charset="UTF-8" />
     <title>麵包店商家管理系統</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Test2/style.css" />
-    <link rel="icon" href="/Test2/favicon.ico" />
-    <base href="/Test2/" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" />
   </head>
   <body>
     <div id="root"></div>
 
+    <!-- ✅ React + Router 載入 -->
     <script type="module">
       import React from "https://esm.sh/react@17";
       import ReactDOM from "https://esm.sh/react-dom@17";
       import * as ReactRouterDOM from "https://cdn.skypack.dev/react-router-dom@5";
+
       window.React = React;
       window.ReactDOM = ReactDOM;
       window.ReactRouterDOM = ReactRouterDOM;
-    </script>
 
-    <!-- 改為靜態載入 app.js 避免 GitHub Pages 動態 import 出錯 -->
-    <script type="module" src="/Test2/app.js"></script>
+      // ✅ 自動判斷環境，修正 app.js 路徑
+      const isGitHub = location.hostname.includes("github.io");
+      const basePath = isGitHub ? "/bb2/" : "./";
+
+      import(`${basePath}app.js`);
+    </script>
   </body>
 </html>
