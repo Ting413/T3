@@ -6,25 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon.ico" />
+    <base href="/Test2/" />
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- ✅ React + Router 載入 -->
+    <!-- ✅ 預先載入 React 全域 -->
     <script type="module">
       import React from "https://esm.sh/react@17";
       import ReactDOM from "https://esm.sh/react-dom@17";
       import * as ReactRouterDOM from "https://cdn.skypack.dev/react-router-dom@5";
-
       window.React = React;
       window.ReactDOM = ReactDOM;
       window.ReactRouterDOM = ReactRouterDOM;
-
-      // ✅ 自動判斷環境，修正 app.js 路徑
-      const isGitHub = location.hostname.includes("github.io");
-      const basePath = isGitHub ? "/Test2/" : "./";
-
-      import(`${basePath}app.js`);
     </script>
+
+    <!-- ✅ 使用 src 直接載入 app.js，不再用 import() -->
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
