@@ -7,22 +7,23 @@ const {
 } = window.ReactRouterDOM;
 
 // 匯入元件（全部都使用相對路徑）
-import Sidebar from "./layout/Sidebar.js";
-import Page from "./components/Page.js";
+// 注意：這裡的路徑要以 /Test2/ 開頭，確保 GitHub Pages 正確加載
+import Sidebar from "/Test2/layout/Sidebar.js";
+import Page from "/Test2/components/Page.js";
 
-import ProductsPage from "./pages/ProductsPage.js";
-import OrdersPage from "./pages/OrdersPage.js";
-import MembersPage from "./pages/MembersPage.js";
-import PromotionsPage from "./pages/PromotionsPage.js";
-import ExportPage from "./pages/ExportPage.js";
-import RevenuePage from "./pages/RevenuePage.js";
-import CalendarPage from "./pages/CalendarPage.js";
+import ProductsPage from "/Test2/pages/ProductsPage.js";
+import OrdersPage from "/Test2/pages/OrdersPage.js";
+import MembersPage from "/Test2/pages/MembersPage.js";
+import PromotionsPage from "/Test2/pages/PromotionsPage.js";
+import ExportPage from "/Test2/pages/ExportPage.js";
+import RevenuePage from "/Test2/pages/RevenuePage.js";
+import CalendarPage from "/Test2/pages/CalendarPage.js";
 
 // 銷售子頁面
-import SalesPage from "./pages/sales/SalesPage.js";
-import SalesOverviewPage from "./pages/sales/SalesOverviewPage.js";
-import SalesRevenuePage from "./pages/sales/SalesRevenuePage.js";
-import SalesProductPage from "./pages/sales/SalesProductPage.js";
+import SalesPage from "/Test2/pages/sales/SalesPage.js";
+import SalesOverviewPage from "/Test2/pages/sales/SalesOverviewPage.js";
+import SalesRevenuePage from "/Test2/pages/sales/SalesRevenuePage.js";
+import SalesProductPage from "/Test2/pages/sales/SalesProductPage.js";
 
 // App 主結構
 function App() {
