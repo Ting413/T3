@@ -1,4 +1,3 @@
-import Page from "../../components/Page.js";
 
 function OrdersPage() {
     const [search, setSearch] = React.useState("");
@@ -126,5 +125,4 @@ function OrdersPage() {
         ])
     ]);
 }
-
-export default OrdersPage;
+window.OrdersPage = OrdersPage;

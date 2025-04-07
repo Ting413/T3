@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>麵包店商家管理系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <!-- ✅ 加入 React + ReactDOM + React Router v5（UMD 模式）-->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@5/umd/react-router-dom.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module">
+      window.React = React;
+      window.ReactDOM = ReactDOM;
+      window.ReactRouterDOM = ReactRouterDOM;
+
+      import "./app.js";
+    </script>
+  </body>
+</html>

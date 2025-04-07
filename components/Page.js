@@ -5,5 +5,5 @@ function Page({ title, children }) {
     ]);
   }
   
-  export default Page;
+  window.Page = Page;
   

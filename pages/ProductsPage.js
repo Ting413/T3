@@ -1,4 +1,3 @@
-import Page from "../../components/Page.js";
 
 function ProductsPage() {
     const [products, setProducts] = React.useState([
@@ -326,4 +325,4 @@ function ProductsPage() {
     ]);
 }
 
-export default ProductsPage;
+window.ProductsPage = ProductsPage;
