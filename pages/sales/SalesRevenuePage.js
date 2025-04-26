@@ -245,7 +245,22 @@ function SalesRevenuePage() {
           position: "relative"
         }
       }, [
-        React.createElement("canvas", { id: "chartCanvas" })
+        React.createElement("div", {
+  style: {
+    maxWidth: "100%",
+    overflowX: "auto",
+    textAlign: "center"
+  }
+}, [
+  React.createElement("canvas", {
+    id: "chartCanvas",
+    style: {
+      maxWidth: "100%",
+      height: "auto"
+    }
+  })
+])
+
       ])
     ]),
 
